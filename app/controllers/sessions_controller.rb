@@ -16,7 +16,7 @@ class SessionsController < ApplicationController
   end
 
   def destroy
-    session[:name] = nil
+    session.delete = :name
     redirect_to '/new'
   end
 
